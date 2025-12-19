@@ -1,0 +1,106 @@
+
+.stApp{
+  background: linear-gradient(135deg, #bddeec, #73b8d0, #249ad5);
+  min-height: 100vh;
+  font-family: "Inter","Segoe UI",system-ui;
+}
+
+.block-container{
+  padding-top: 2rem;
+  max-width: 980px;
+}
+
+.card{
+  border-radius: 18px;
+  padding: 18px;
+  margin: 14px 0;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.18);
+}
+
+.gradient-hero{
+  background: linear-gradient(135deg, #ffffff, #afb4b8, #555b60);
+}
+
+.gradient-blue{
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+}
+
+.gradient-purple{
+  background: linear-gradient(135deg, #ede7f6, #d1c4e9);
+}
+
+.gradient-green{
+  background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+}
+
+.gradient-orange{
+  background: linear-gradient(135deg, #fff3e0, #ffd180);
+}
+
+h3{
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.hero-title{
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #000;
+}
+
+.hero-subtitle{
+  margin-top: 6px;
+  color: rgba(0,0,0,0.7);
+}
+
+input[type="number"]{
+  background: #ffffff !important;
+  color: #000 !important;
+  border-radius: 12px !important;
+  border: 1px solid rgba(0,0,0,0.25) !important;
+  padding: 10px !important;
+  box-shadow: none !important;
+}
+
+.stButton > button{
+  width: 100%;
+  border: none;
+  border-radius: 14px;
+  padding: 0.85rem 1rem;
+  font-weight: 800;
+
+  background: #e3f2fd;   
+  color: #000;
+
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.stButton > button:hover,
+.stButton > button:active{
+  background: #e3f2fd;
+  color: #000;
+  transform: none;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+}
+
+.prediction-box{
+  margin-top: 14px;
+  padding: 14px;
+  border-radius: 14px;
+
+  background: rgba(255,255,255,0.9);
+  color: #000;
+
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+.footer{
+  text-align: center;
+  margin-top: 18px;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;
+}
