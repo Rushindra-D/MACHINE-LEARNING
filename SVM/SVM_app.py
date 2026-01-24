@@ -63,7 +63,7 @@ st.markdown("""
 
 @st.cache_data
 def load_data():
-    df = pd.read_csv("C:/Users/dobil/Downloads/train_u6lujuX_CVtuZ9i.csv")
+    df = pd.read_csv("train_u6lujuX_CVtuZ9i.csv")
     df.drop("Loan_ID", axis=1, inplace=True)
 
     for col in df.columns:
