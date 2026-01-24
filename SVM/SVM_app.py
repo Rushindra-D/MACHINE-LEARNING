@@ -75,6 +75,7 @@ def load_data():
     df = pd.get_dummies(df, drop_first=True)
     return df
 
+
 df = load_data()
 
 X = df.drop("Loan_Status_Y", axis=1)
