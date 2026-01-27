@@ -1,3 +1,4 @@
+import os
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -67,6 +68,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 @st.cache_data
 def load_data():
+    if not os.path.exists("credit_risk_dataset.csv"):
+        st.error("Dataset file not found. Please upload credit_risk_dataset.csv")
+        st.stop()
     return pd.read_csv("credit_risk_dataset.csv")
 df = load_data()
 for col in df.columns:
