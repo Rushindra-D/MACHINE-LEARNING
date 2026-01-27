@@ -68,10 +68,16 @@ st.markdown("""
 """, unsafe_allow_html=True)
 @st.cache_data
 def load_data():
-    if not os.path.exists("credit_risk_dataset.csv"):
-        st.error("Dataset file not found. Please upload credit_risk_dataset.csv")
+
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    
+    data_path = os.path.join(BASE_DIR, "credit_risk_dataset.csv")
+
+    if not os.path.exists(data_path):
+        st.error(f"Dataset file not found at: {data_path}")
         st.stop()
-    return pd.read_csv("credit_risk_dataset.csv")
+
+    return pd.read_csv(data_path)
 df = load_data()
 for col in df.columns:
     if df[col].dtype == "object":
